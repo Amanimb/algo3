@@ -1,0 +1,21 @@
+ALGORITHM 
+
+VAR
+t :  ARRAY_OF INTEGER[50];
+i : INTEGER
+j : INTEGER
+x : INTEGER
+BEGIN
+    
+j:=2
+while j<=length(t) do  
+  i:=j-1
+  x:=t[j]
+  while i>0 and t[i]>x do
+    t[i+1]:=t[i]
+    i:=i-1
+ end while
+  t[i+1]:=x
+  j:=j+1
+end while
+END
